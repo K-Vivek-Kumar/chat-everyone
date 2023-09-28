@@ -1,0 +1,168 @@
+/* Reset some default styles to ensure consistency */
+body,
+h1,
+h2,
+ul,
+li,
+button,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply some basic styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+/* Style the welcome message */
+.welcome-message {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the left navigation panel */
+.left-navigation {
+  background-color: #eee;
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-navigation h2 {
+  font-size: 18px;
+}
+
+/* Style the connected user list */
+#userList {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style the refresh button */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Style the right body panel */
+.right-body {
+  background-color: #fff;
+  width: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style the head chat */
+.head-chat {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.head-chat h2 {
+  font-size: 20px;
+}
+
+/* Style the body chat */
+.body-chat {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 400px; /* Adjust this value as needed */
+  overflow-y: scroll; /* Add scrollbar for chat messages */
+}
+
+/* Style the chat messages */
+#messages {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style chat message items */
+.sent-by-you,
+.sent-by-other {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.sent-by-you {
+  background-color: #4caf50; /* Your message background color */
+  color: #fff;
+  align-self: flex-end;
+}
+
+.sent-by-other {
+  background-color: #007bff; /* Other users' message background color */
+  color: #fff;
+}
+
+/* Style the chat input and send button */
+#chatForm {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .left-navigation {
+    width: 100%;
+    padding: 10px;
+  }
+  .right-body {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#chatForm {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 100;
+}
